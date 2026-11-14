@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#ff6fa5">
+  <title>Andrea — ¡Mis 2 Añitos! | Invitación Especial</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='20' cy='20' r='12' fill='%234a152c'/%3E%3Ccircle cx='44' cy='20' r='12' fill='%234a152c'/%3E%3Ccircle cx='32' cy='38' r='16' fill='%23ff3b82'/%3E%3C/svg%3E">
+  <meta name="description" content="Acompáñanos a celebrar el segundo cumpleaños de Andrea. Sábado 21 de noviembre, Recepción 6:00 PM, Show 7:30 PM en Juárez, Nuevo León.">
+
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="🎀 Andrea — ¡Mis 2 Añitos! | Invitación Especial">
+  <meta property="og:description" content="Tienes una invitación especial para celebrar los 2 añitos de Andrea. Sábado 21 de noviembre • 6:00 PM.">
+
+  <!-- Tipografías Google Fonts: Elegante infantil + Script festivo + Sans legible -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Fredoka:wght@400;500;600;700&family=Great+Vibes&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="is-locked">
+  <!-- Lienzo global de partículas mágicas (destellos, estrellas, corazones) -->
+  <canvas id="sparkle-canvas" aria-hidden="true"></canvas>
+
+  <!-- =========================================================
+       1. INTRO: SOBRE ROSA TRIDIMENSIONAL + MOÑO ANIMADO
+       ========================================================= -->
+  <section id="intro-screen" class="intro-screen" aria-label="Apertura de invitación">
+    <!-- Decoraciones ambientales flotantes -->
+    <div class="intro-ambient" aria-hidden="true">
+      <span class="floating-orb orb-1"></span>
+      <span class="floating-orb orb-2"></span>
+      <span class="floating-orb orb-3"></span>
+      <svg class="float-svg star-1" viewBox="0 0 24 24"><path d="M12 1l2.8 6.8L22 9.3l-5.2 4.8L18.2 21 12 17.5 5.8 21l1.4-6.9L2 9.3l7.2-1.5z"/></svg>
+      <svg class="float-svg heart-1" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      <svg class="float-svg star-2" viewBox="0 0 24 24"><path d="M12 1l2.8 6.8L22 9.3l-5.2 4.8L18.2 21 12 17.5 5.8 21l1.4-6.9L2 9.3l7.2-1.5z"/></svg>
+      <svg class="float-svg heart-2" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      <!-- Ramilletes de Globos 3D perlados en la Intro -->
+      <svg class="intro-balloon ib-left-1" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="ibPink" cx="32%" cy="28%" r="68%">
+            <stop offset="0%" stop-color="#ffe6f0"/>
+            <stop offset="40%" stop-color="#ff66a1"/>
+            <stop offset="100%" stop-color="#b80d4e"/>
+          </radialGradient>
+          <radialGradient id="ibGold" cx="32%" cy="28%" r="68%">
+            <stop offset="0%" stop-color="#fffbe6"/>
+            <stop offset="42%" stop-color="#e5c158"/>
+            <stop offset="100%" stop-color="#9e730f"/>
+          </radialGradient>
+        </defs>
+        <path d="M45 96 Q38 118 48 148" stroke="#d4af37" stroke-width="1.5" fill="none"/>
+        <ellipse cx="45" cy="48" rx="34" ry="42" fill="url(#ibPink)"/>
+        <ellipse cx="32" cy="30" rx="8" ry="15" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.55"/>
+        <path d="M40 90 L50 90 L45 96 Z" fill="#d81b60"/>
+      </svg>
+      <svg class="intro-balloon ib-left-2" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+        <path d="M45 96 Q52 118 42 148" stroke="#d4af37" stroke-width="1.5" fill="none"/>
+        <ellipse cx="45" cy="48" rx="32" ry="40" fill="url(#ibGold)"/>
+        <ellipse cx="32" cy="30" rx="7" ry="13" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.6"/>
+        <path d="M40 88 L50 88 L45 95 Z" fill="#b48618"/>
+      </svg>
+      <svg class="intro-balloon ib-left-3" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+        <path d="M45 96 Q40 118 48 148" stroke="#d4af37" stroke-width="1.5" fill="none"/>
+        <ellipse cx="45" cy="48" rx="30" ry="38" fill="url(#ibGold)"/>
+        <ellipse cx="32" cy="30" rx="7" ry="12" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.55"/>
+        <path d="M40 86 L50 86 L45 93 Z" fill="#b48618"/>
+      </svg>
+
+      <svg class="intro-balloon ib-right-1" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+        <path d="M45 96 Q52 118 42 148" stroke="#d4af37" stroke-width="1.5" fill="none"/>
+        <ellipse cx="45" cy="48" rx="33" ry="41" fill="url(#ibPink)"/>
+        <ellipse cx="32" cy="30" rx="8" ry="14" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.55"/>
+        <path d="M40 89 L50 89 L45 96 Z" fill="#d81b60"/>
+      </svg>
+      <svg class="intro-balloon ib-right-2" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+        <path d="M45 96 Q38 118 48 148" stroke="#d4af37" stroke-width="1.5" fill="none"/>
+        <ellipse cx="45" cy="48" rx="30" ry="38" fill="url(#ibGold)"/>
+        <ellipse cx="32" cy="30" rx="7" ry="12" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.6"/>
+        <path d="M40 86 L50 86 L45 93 Z" fill="#b48618"/>
+      </svg>
+    </div>
+
+    <div class="intro-content">
+      <div class="intro-badge">
+        <span class="sparkle-dot"></span>
+        <span>Edición Especial • 2° Cumpleaños</span>
+        <span class="sparkle-dot"></span>
+      </div>
+
+      <h1 class="intro-headline">
+        Tienes una invitación
+        <span class="headline-script">especial</span>
+      </h1>
+      <div class="title-ornament intro-ornament" aria-hidden="true">
+        <span></span>
+        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <span></span>
+      </div>
+      <p class="intro-subtext">Toca el sobre para descubrir la magia</p>
+
+      <!-- Escena 3D del Sobre Rosa -->
+      <div class="envelope-stage">
+        <div id="envelope-3d" class="envelope-3d" role="button" tabindex="0" aria-label="Abrir invitación de Andrea">
+          <!-- Sombra proyectada -->
+          <div class="envelope-shadow"></div>
+
+          <!-- Parte trasera del sobre -->
+          <div class="envelope-back"></div>
+
+          <!-- Tarjeta interior que emerge al abrir -->
+          <div class="envelope-letter">
+            <div class="letter-inner">
+              <div class="letter-ears" aria-hidden="true">
+                <span class="mini-ear left"></span>
+                <span class="mini-ear right"></span>
+              </div>
+              <span class="letter-tag">¡Estás invitado!</span>
+              <strong class="letter-name">Andrea</strong>
+              <span class="letter-sub">Mis 2 Añitos</span>
+            </div>
+          </div>
+
+          <!-- Bolsillo frontal con lunares blancos y borde dorado -->
+          <div class="envelope-front">
+            <div class="envelope-pocket-left"></div>
+            <div class="envelope-pocket-right"></div>
+            <div class="envelope-pocket-bottom"></div>
+            <div class="envelope-ribbon-band"></div>
+            <div class="envelope-gold-trim"></div>
+          </div>
+
+          <!-- Solapa superior 3D -->
+          <div class="envelope-flap">
+            <div class="flap-face flap-outer"></div>
+            <div class="flap-face flap-inner"></div>
+          </div>
+
+          <!-- Anillo mágico expansivo al abrir -->
+          <div class="envelope-magic-ring" aria-hidden="true"></div>
+
+          <!-- Moño Couture Rosa Satinado con Ribetes y Broche Dorado -->
+          <div class="minnie-bow-seal" aria-hidden="true">
+            <div class="bow-glow"></div>
+            <svg class="bow-svg" viewBox="0 0 220 150" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="bowPinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ff8fbe"/>
+                  <stop offset="45%" stop-color="#ff2e7e"/>
+                  <stop offset="100%" stop-color="#b80d4e"/>
+                </linearGradient>
+                <linearGradient id="bowPinkFold" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#9c0c43"/>
+                  <stop offset="100%" stop-color="#e91e63"/>
+                </linearGradient>
+                <linearGradient id="goldTrimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fff8d6"/>
+                  <stop offset="45%" stop-color="#e5c158"/>
+                  <stop offset="100%" stop-color="#9e730f"/>
+                </linearGradient>
+                <radialGradient id="goldBrooch" cx="35%" cy="30%" r="70%">
+                  <stop offset="0%" stop-color="#fffbe6"/>
+                  <stop offset="50%" stop-color="#e5c158"/>
+                  <stop offset="100%" stop-color="#8f650a"/>
+                </radialGradient>
+                <filter id="bowShadow" x="-15%" y="-15%" width="130%" height="140%">
+                  <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#700931" flood-opacity="0.4"/>
+                </filter>
+              </defs>
+              <g filter="url(#bowShadow)">
+                <!-- Colas inferiores del moño con ribete dorado -->
+                <path d="M98 76 L56 138 L76 130 L88 142 L106 82 Z" fill="url(#bowPinkGrad)" stroke="url(#goldTrimGrad)" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M122 76 L164 138 L144 130 L132 142 L114 82 Z" fill="url(#bowPinkGrad)" stroke="url(#goldTrimGrad)" stroke-width="3" stroke-linejoin="round"/>
+                <!-- Lazos superiores secundarios (doble moño) -->
+                <path d="M102 64 C74 16, 28 18, 32 52 C36 74, 76 76, 102 68 Z" fill="url(#bowPinkFold)" stroke="url(#goldTrimGrad)" stroke-width="2.5"/>
+                <path d="M118 64 C146 16, 192 18, 188 52 C184 74, 144 76, 118 68 Z" fill="url(#bowPinkFold)" stroke="url(#goldTrimGrad)" stroke-width="2.5"/>
+                <!-- Lazo principal izquierdo -->
+                <path d="M104 66 C66 26, 14 30, 18 72 C22 108, 74 104, 104 74 Z" fill="url(#bowPinkGrad)" stroke="url(#goldTrimGrad)" stroke-width="3"/>
+                <path d="M98 68 C74 52, 46 58, 46 71 C46 84, 74 84, 98 72 Z" fill="#880e4f" opacity="0.32"/>
+                <!-- Lazo principal derecho -->
+                <path d="M116 66 C154 26, 206 30, 202 72 C198 108, 146 104, 116 74 Z" fill="url(#bowPinkGrad)" stroke="url(#goldTrimGrad)" stroke-width="3"/>
+                <path d="M122 68 C146 52, 174 58, 174 71 C174 84, 146 84, 122 72 Z" fill="#880e4f" opacity="0.32"/>
+                <!-- Lunares sutiles en los lazos -->
+                <circle cx="44" cy="54" r="4.5" fill="#ffffff" opacity="0.45"/>
+                <circle cx="38" cy="78" r="4" fill="#ffffff" opacity="0.4"/>
+                <circle cx="66" cy="84" r="4" fill="#ffffff" opacity="0.35"/>
+                <circle cx="176" cy="54" r="4.5" fill="#ffffff" opacity="0.45"/>
+                <circle cx="182" cy="78" r="4" fill="#ffffff" opacity="0.4"/>
+                <circle cx="154" cy="84" r="4" fill="#ffffff" opacity="0.35"/>
+                <!-- Broche central dorado 3D -->
+                <circle cx="110" cy="68" r="18" fill="url(#goldTrimGrad)" stroke="#704e06" stroke-width="1.5"/>
+                <circle cx="110" cy="68" r="13" fill="url(#goldBrooch)" stroke="#fff8d6" stroke-width="1.5"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <button id="open-invitation-btn" class="btn-open-envelope" type="button">
+        <span class="btn-shine"></span>
+        <span>Abrir Invitación</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTROLES FLOTANTES (MÚSICA + COMPARTIR)
+       ========================================================= -->
+  <div id="floating-controls" class="floating-controls" aria-hidden="true">
+    <button id="music-toggle-btn" class="fab-control music-fab" type="button" aria-label="Reproducir o pausar música ambiental" title="Música ambiental">
+      <div class="music-disc">
+        <svg class="icon-note" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+      </div>
+      <div class="equalizer" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    </button>
+
+    <button id="share-fab-btn" class="fab-control share-fab" type="button" aria-label="Compartir por WhatsApp" title="Compartir por WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
+    </button>
+  </div>
+
+  <!-- =========================================================
+       CONTENIDO PRINCIPAL DE LA INVITACIÓN
+       ========================================================= -->
+  <main id="invitation-main" class="invitation-main" aria-hidden="true">
+
+    <!-- 2. HERO: ANDREA — ¡MIS 2 AÑITOS! -->
+    <header class="hero-section">
+      <!-- Fondo con lunares blancos suaves y destellos parallax -->
+      <div class="hero-polka-layer" data-parallax="0.18" aria-hidden="true"></div>
+      <div class="hero-decor-layer" data-parallax="-0.12" aria-hidden="true">
+        <!-- Ramillete izquierdo de Globos 3D SVG -->
+        <svg class="hero-balloon hb-left-1" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="bPink" cx="32%" cy="28%" r="68%">
+              <stop offset="0%" stop-color="#ffe6f0"/>
+              <stop offset="42%" stop-color="#ff4d8d"/>
+              <stop offset="100%" stop-color="#b80d4e"/>
+            </radialGradient>
+            <radialGradient id="bGold" cx="32%" cy="28%" r="68%">
+              <stop offset="0%" stop-color="#fffbe6"/>
+              <stop offset="42%" stop-color="#e5c158"/>
+              <stop offset="100%" stop-color="#9e730f"/>
+            </radialGradient>
+            <radialGradient id="bPastel" cx="32%" cy="28%" r="68%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="48%" stop-color="#ffb3d1"/>
+              <stop offset="100%" stop-color="#e6679b"/>
+            </radialGradient>
+          </defs>
+          <path d="M45 96 Q38 118 48 148" stroke="#d4af37" stroke-width="1.6" fill="none"/>
+          <ellipse cx="45" cy="48" rx="34" ry="42" fill="url(#bPink)"/>
+          <ellipse cx="32" cy="30" rx="8" ry="15" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.52"/>
+          <path d="M40 90 L50 90 L45 96 Z" fill="#d81b60"/>
+        </svg>
+        <svg class="hero-balloon hb-left-2" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+          <path d="M45 96 Q52 118 42 148" stroke="#d4af37" stroke-width="1.6" fill="none"/>
+          <ellipse cx="45" cy="48" rx="32" ry="40" fill="url(#bGold)"/>
+          <ellipse cx="32" cy="30" rx="7" ry="13" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.6"/>
+          <path d="M40 88 L50 88 L45 95 Z" fill="#b48618"/>
+        </svg>
+        <svg class="hero-balloon hb-left-3" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+          <path d="M45 96 Q38 118 48 148" stroke="#d4af37" stroke-width="1.6" fill="none"/>
+          <ellipse cx="45" cy="48" rx="30" ry="38" fill="url(#bPastel)"/>
+          <ellipse cx="32" cy="30" rx="7" ry="12" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.6"/>
+          <path d="M40 86 L50 86 L45 93 Z" fill="#e6679b"/>
+        </svg>
+        <svg class="hero-balloon hb-left-4" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+          <path d="M45 96 Q50 118 44 148" stroke="#d4af37" stroke-width="1.6" fill="none"/>
+          <ellipse cx="45" cy="48" rx="28" ry="36" fill="url(#bPink)"/>
+          <ellipse cx="32" cy="30" rx="6" ry="11" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.5"/>
+          <path d="M40 84 L50 84 L45 91 Z" fill="#d81b60"/>
+        </svg>
+
+        <!-- Ramillete derecho de Globos 3D SVG -->
+        <svg class="hero-balloon hb-right-1" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+          <path d="M45 96 Q52 118 42 148" stroke="#d4af37" stroke-width="1.6" fill="none"/>
+          <ellipse cx="45" cy="48" rx="34" ry="42" fill="url(#bGold)"/>
+          <ellipse cx="32" cy="30" rx="8" ry="14" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.6"/>
+          <path d="M40 90 L50 90 L45 96 Z" fill="#b48618"/>
+        </svg>
+        <svg class="hero-balloon hb-right-2" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+          <path d="M45 96 Q38 118 48 148" stroke="#d4af37" stroke-width="1.6" fill="none"/>
+          <ellipse cx="45" cy="48" rx="32" ry="40" fill="url(#bPink)"/>
+          <ellipse cx="32" cy="30" rx="7" ry="13" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.52"/>
+          <path d="M40 88 L50 88 L45 95 Z" fill="#d81b60"/>
+        </svg>
+        <svg class="hero-balloon hb-right-3" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+          <path d="M45 96 Q52 118 42 148" stroke="#d4af37" stroke-width="1.6" fill="none"/>
+          <ellipse cx="45" cy="48" rx="30" ry="38" fill="url(#bPastel)"/>
+          <ellipse cx="32" cy="30" rx="7" ry="12" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.6"/>
+          <path d="M40 86 L50 86 L45 93 Z" fill="#e6679b"/>
+        </svg>
+        <svg class="hero-balloon hb-right-4" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg">
+          <path d="M45 96 Q40 118 48 148" stroke="#d4af37" stroke-width="1.6" fill="none"/>
+          <ellipse cx="45" cy="48" rx="28" ry="36" fill="url(#bGold)"/>
+          <ellipse cx="32" cy="30" rx="6" ry="11" transform="rotate(-22 32 30)" fill="#ffffff" opacity="0.6"/>
+          <path d="M40 84 L50 84 L45 91 Z" fill="#b48618"/>
+        </svg>
+
+        <!-- Flores giratorias de fondo en el Hero -->
+        <svg class="hero-flower-spin hfs-1" viewBox="0 0 64 64">
+          <g fill="#ff6aa5" stroke="#c91255" stroke-width="1.5">
+            <circle cx="32" cy="14" r="10"/><circle cx="49" cy="26" r="10"/><circle cx="42" cy="46" r="10"/><circle cx="22" cy="46" r="10"/><circle cx="15" cy="26" r="10"/>
+          </g>
+          <circle cx="32" cy="31" r="9" fill="#ffe066" stroke="#d4af37" stroke-width="1.5"/>
+        </svg>
+        <svg class="hero-flower-spin hfs-2" viewBox="0 0 64 64">
+          <g fill="#ffe066" stroke="#d4af37" stroke-width="1.5">
+            <circle cx="32" cy="15" r="9"/><circle cx="48" cy="26" r="9"/><circle cx="42" cy="45" r="9"/><circle cx="22" cy="45" r="9"/><circle cx="16" cy="26" r="9"/>
+          </g>
+          <circle cx="32" cy="31" r="8" fill="#ff5c97"/>
+        </svg>
+        <svg class="hero-flower-spin hfs-3" viewBox="0 0 64 64">
+          <g fill="#ffb3d1" stroke="#e91e63" stroke-width="1.5">
+            <circle cx="32" cy="14" r="10"/><circle cx="49" cy="26" r="10"/><circle cx="42" cy="46" r="10"/><circle cx="22" cy="46" r="10"/><circle cx="15" cy="26" r="10"/>
+          </g>
+          <circle cx="32" cy="31" r="9" fill="#ffe066" stroke="#d4af37" stroke-width="1.5"/>
+        </svg>
+        <svg class="hero-flower-spin hfs-4" viewBox="0 0 64 64">
+          <g fill="#ffe066" stroke="#d4af37" stroke-width="1.5">
+            <circle cx="32" cy="15" r="9"/><circle cx="48" cy="26" r="9"/><circle cx="42" cy="45" r="9"/><circle cx="22" cy="45" r="9"/><circle cx="16" cy="26" r="9"/>
+          </g>
+          <circle cx="32" cy="31" r="8" fill="#ff3b82"/>
+        </svg>
+
+        <svg class="hero-float hf-1" viewBox="0 0 24 24"><path d="M12 1l2.8 6.8L22 9.3l-5.2 4.8L18.2 21 12 17.5 5.8 21l1.4-6.9L2 9.3l7.2-1.5z"/></svg>
+        <svg class="hero-float hf-2" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <svg class="hero-float hf-3" viewBox="0 0 24 24"><path d="M12 1l2.8 6.8L22 9.3l-5.2 4.8L18.2 21 12 17.5 5.8 21l1.4-6.9L2 9.3l7.2-1.5z"/></svg>
+        <svg class="hero-float hf-4" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </div>
+
+      <div class="container hero-container">
+        <!-- Guirnalda festiva superior SVG -->
+        <div class="hero-garland" aria-hidden="true">
+          <svg viewBox="0 0 600 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 10 Q150 58 300 22 Q450 58 590 10" stroke="#d4af37" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+            <path d="M55 24 L75 50 L95 28 Z" fill="#ff85b3"/>
+            <path d="M115 36 L133 62 L155 40 Z" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.5"/>
+            <path d="M175 40 L195 66 L215 38 Z" fill="#ff3b82"/>
+            <path d="M235 32 L255 58 L275 28 Z" fill="#f3d078"/>
+            <path d="M325 28 L345 58 L365 32 Z" fill="#f3d078"/>
+            <path d="M385 38 L405 66 L425 40 Z" fill="#ff3b82"/>
+            <path d="M445 40 L467 62 L485 36 Z" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.5"/>
+            <path d="M505 28 L525 50 L545 24 Z" fill="#ff85b3"/>
+          </svg>
+        </div>
+
+        <!-- Escenario Épico del Personaje Minnie Mouse Rosa -->
+        <div class="minnie-showcase reveal-item">
+          <div class="showcase-aura" aria-hidden="true"></div>
+          <div class="showcase-ring" aria-hidden="true"></div>
+
+          <div class="showcase-stage">
+            <video
+              id="minnie-video"
+              class="minnie-character-video"
+              src="assets/minnie-hero.mp4"
+              poster="assets/minnie-hero.jpg"
+              autoplay
+              loop
+              muted
+              playsinline
+              disablepictureinpicture
+              preload="auto"
+              aria-label="Minnie Mouse Rosa celebrando los 2 añitos de Andrea"
+            ></video>
+          </div>
+
+          <!-- Florecitas inspiradas en el personaje -->
+          <svg class="showcase-flower sf-pink" viewBox="0 0 64 64" aria-hidden="true">
+            <g fill="#ff5c97" stroke="#c91255" stroke-width="1.5">
+              <circle cx="32" cy="14" r="10"/>
+              <circle cx="49" cy="26" r="10"/>
+              <circle cx="42" cy="46" r="10"/>
+              <circle cx="22" cy="46" r="10"/>
+              <circle cx="15" cy="26" r="10"/>
+            </g>
+            <circle cx="32" cy="31" r="9" fill="#ffd95a" stroke="#d4af37" stroke-width="1.5"/>
+          </svg>
+
+          <svg class="showcase-flower sf-yellow" viewBox="0 0 64 64" aria-hidden="true">
+            <g fill="#ffe066" stroke="#d4af37" stroke-width="1.5">
+              <circle cx="32" cy="15" r="9"/>
+              <circle cx="48" cy="26" r="9"/>
+              <circle cx="42" cy="45" r="9"/>
+              <circle cx="22" cy="45" r="9"/>
+              <circle cx="16" cy="26" r="9"/>
+            </g>
+            <circle cx="32" cy="31" r="8" fill="#ff5c97"/>
+          </svg>
+
+          <svg class="showcase-flower sf-pink-r" viewBox="0 0 64 64" aria-hidden="true">
+            <g fill="#ff5c97" stroke="#c91255" stroke-width="1.5">
+              <circle cx="32" cy="14" r="10"/><circle cx="49" cy="26" r="10"/><circle cx="42" cy="46" r="10"/><circle cx="22" cy="46" r="10"/><circle cx="15" cy="26" r="10"/>
+            </g>
+            <circle cx="32" cy="31" r="9" fill="#ffd95a" stroke="#d4af37" stroke-width="1.5"/>
+          </svg>
+
+          <svg class="showcase-flower sf-yellow-r" viewBox="0 0 64 64" aria-hidden="true">
+            <g fill="#ffe066" stroke="#d4af37" stroke-width="1.5">
+              <circle cx="32" cy="15" r="9"/><circle cx="48" cy="26" r="9"/><circle cx="42" cy="45" r="9"/><circle cx="22" cy="45" r="9"/><circle cx="16" cy="26" r="9"/>
+            </g>
+            <circle cx="32" cy="31" r="8" fill="#ff5c97"/>
+          </svg>
+        </div>
+
+        <p class="hero-pretitle reveal-item">¡Acompáñanos a celebrar un día mágico!</p>
+        <h2 class="hero-name reveal-item">ANDREA</h2>
+        <div class="hero-age-emblem reveal-item" aria-label="¡Mis 2 Añitos!">
+          <span class="emblem-line"></span>
+          <span class="emblem-word">¡MIS</span>
+          <span class="emblem-gem">2</span>
+          <span class="emblem-word">AÑITOS!</span>
+          <span class="emblem-line"></span>
+        </div>
+
+        <p class="hero-verse reveal-item">
+          Dos añitos llenos de risas, abrazos y magia. Queremos compartir contigo la alegría de celebrar este capítulo tan especial junto a nuestra familia y amigos.
+        </p>
+
+        <!-- Cuenta regresiva -->
+        <div class="countdown-card reveal-item" aria-label="Cuenta regresiva para la fiesta">
+          <p class="countdown-title">Falta muy poco para festejar</p>
+          <div class="countdown-grid" id="countdown">
+            <div class="cd-box">
+              <span class="cd-num" id="cd-days">00</span>
+              <span class="cd-label">Días</span>
+            </div>
+            <div class="cd-sep">:</div>
+            <div class="cd-box">
+              <span class="cd-num" id="cd-hours">00</span>
+              <span class="cd-label">Horas</span>
+            </div>
+            <div class="cd-sep">:</div>
+            <div class="cd-box">
+              <span class="cd-num" id="cd-mins">00</span>
+              <span class="cd-label">Min</span>
+            </div>
+            <div class="cd-sep">:</div>
+            <div class="cd-box">
+              <span class="cd-num" id="cd-secs">00</span>
+              <span class="cd-label">Seg</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#info-section" class="scroll-cue" aria-label="Desplazar hacia la información">
+          <span>Descubre los detalles</span>
+          <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </a>
+      </div>
+
+      <!-- Divisor ondulado inferior -->
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+          <path d="M0,32 C320,90 1120,0 1440,56 L1440,90 L0,90 Z" fill="#ffffff"/>
+        </svg>
+      </div>
+    </header>
+
+    <!-- 3. INFORMACIÓN: FECHA, HORARIOS Y CALENDARIO -->
+    <section id="info-section" class="section info-section">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-kicker">Reserva la fecha</span>
+          <h3 class="section-title">¿Cuándo celebramos?</h3>
+          <div class="title-ornament" aria-hidden="true">
+            <span></span>
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span></span>
+          </div>
+        </div>
+
+        <!-- Tarjeta Fecha Principal -->
+        <div class="date-hero-card reveal-item">
+          <div class="date-ribbon">Guarda este día</div>
+          <div class="date-display">
+            <span class="date-day-name">Sábado</span>
+            <span class="date-number">21</span>
+            <span class="date-month">de noviembre</span>
+          </div>
+        </div>
+
+        <!-- Tarjetas de Horarios (Recepción & Show) -->
+        <div class="schedule-grid">
+          <article class="schedule-card reveal-item">
+            <div class="schedule-icon-wrap">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#ffe6f0" stroke="#d4af37" stroke-width="2"/>
+                <path d="M18 15c-3 0-5 2.5-5 5.5 0 4.5 5 8.5 5 8.5s5-4 5-8.5c0-3-2-5.5-5-5.5z" fill="#ff4d8d"/>
+                <path d="M30 13c-3 0-5 2.5-5 5.5 0 4.5 5 8.5 5 8.5s5-4 5-8.5c0-3-2-5.5-5-5.5z" fill="#ff85b3"/>
+                <path d="M18 29v9M30 27v11" stroke="#b48618" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="schedule-label">Recepción</span>
+            <strong class="schedule-time">6:00 PM</strong>
+            <p class="schedule-desc">Bienvenida con música, fotos y mucha diversión para los peques.</p>
+          </article>
+
+          <article class="schedule-card highlight-card reveal-item">
+            <div class="schedule-icon-wrap">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#fff4d6" stroke="#d4af37" stroke-width="2"/>
+                <path d="M24 10l3.2 6.8 7.5 1-5.5 5.2 1.4 7.5L24 26.9l-6.6 3.6 1.4-7.5-5.5-5.2 7.5-1L24 10z" fill="#ff4d8d" stroke="#d4af37" stroke-width="1.5"/>
+                <circle cx="14" cy="34" r="2" fill="#d4af37"/>
+                <circle cx="34" cy="34" r="2" fill="#d4af37"/>
+              </svg>
+            </div>
+            <span class="schedule-label">Show</span>
+            <strong class="schedule-time">7:30 PM</strong>
+            <p class="schedule-desc">¡Prepárate para un espectáculo mágico lleno de sorpresas!</p>
+          </article>
+        </div>
+
+        <!-- Botón Agregar a Google Calendar -->
+        <div class="calendar-actions reveal-item">
+          <a id="google-cal-link" class="btn-primary-gold" href="#" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5v-5z"/></svg>
+            <span>Agregar a Google Calendar</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3B. UBICACIÓN -->
+    <section id="location-section" class="section location-section polka-soft">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-kicker">Lugar de la celebración</span>
+          <h3 class="section-title">Ubicación</h3>
+          <div class="title-ornament" aria-hidden="true">
+            <span></span>
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="location-card reveal-item">
+          <!-- Mini mapa vectorial ilustrado de la esquina -->
+          <div class="mini-map-illustration" aria-hidden="true">
+            <svg viewBox="0 0 420 150" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="mapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fff5f9"/>
+                  <stop offset="100%" stop-color="#ffe6f0"/>
+                </linearGradient>
+              </defs>
+              <rect width="420" height="150" rx="18" fill="url(#mapBg)"/>
+              <!-- Cuadrícula suave -->
+              <path d="M0 40 H420 M0 110 H420 M80 0 V150 M340 0 V150" stroke="#ffd1e3" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <!-- Avenida Pablo Livas -->
+              <path d="M0 95 Q210 85 420 98" stroke="#ffffff" stroke-width="22" fill="none"/>
+              <path d="M0 95 Q210 85 420 98" stroke="#f5b8d0" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+              <!-- Calle 16 de Agosto -->
+              <path d="M210 0 L205 150" stroke="#ffffff" stroke-width="18" fill="none"/>
+              <path d="M210 0 L205 150" stroke="#f5b8d0" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+              <!-- Etiquetas de calles -->
+              <rect x="24" y="83" width="128" height="22" rx="11" fill="#ffffff" stroke="#d4af37" stroke-width="1"/>
+              <text x="88" y="98" text-anchor="middle" font-family="'Fredoka', sans-serif" font-size="10" font-weight="600" fill="#7d4a61">Av. Pablo Livas</text>
+              <rect x="232" y="18" width="122" height="22" rx="11" fill="#ffffff" stroke="#d4af37" stroke-width="1"/>
+              <text x="293" y="33" text-anchor="middle" font-family="'Fredoka', sans-serif" font-size="10" font-weight="600" fill="#7d4a61">C. 16 de Agosto #101</text>
+              <!-- Pin Minnie en la esquina -->
+              <g transform="translate(207, 68)">
+                <circle cx="-11" cy="-18" r="8" fill="#4a152c" stroke="#d4af37" stroke-width="1.5"/>
+                <circle cx="11" cy="-18" r="8" fill="#4a152c" stroke="#d4af37" stroke-width="1.5"/>
+                <path d="M0 -20 C-11 -20 -18 -11 -18 -1 C-18 11 0 24 0 24 C0 24 18 11 18 -1 C18 -11 11 -20 0 -20 Z" fill="#ff3b82" stroke="#ffffff" stroke-width="2.5"/>
+                <circle cx="0" cy="-2" r="5" fill="#fff3c4"/>
+              </g>
+            </svg>
+          </div>
+
+          <div class="location-pin-badge" aria-hidden="true">
+            <div class="pin-pulse"></div>
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+
+          <address class="location-address">
+            <strong>Calle 16 de Agosto No. 101,</strong><br>
+            esquina con Avenida Pablo Livas,<br>
+            Colonia Reserva de San Roque,<br>
+            Juárez, Nuevo León.
+          </address>
+
+          <div class="planta-alta-pill">
+            <span>✦ PLANTA ALTA ✦</span>
+          </div>
+
+          <div class="location-actions">
+            <a id="google-maps-btn" class="btn-primary-pink" href="https://maps.app.goo.gl/iqXuYVuNKGAwyWB67" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>
+              <span>Abrir en Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. REGALOS / LLUVIA DE SOBRES -->
+    <section id="gifts-section" class="section gifts-section">
+      <div class="container">
+        <div class="gifts-card reveal-item">
+          <div class="gifts-bow-top" aria-hidden="true">
+            <svg viewBox="0 0 120 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M56 32 C36 6, 6 8, 8 32 C10 52, 38 50, 56 36 Z" fill="#ff4d8d" stroke="#d4af37" stroke-width="2"/>
+              <path d="M64 32 C84 6, 114 8, 112 32 C110 52, 82 50, 64 36 Z" fill="#ff4d8d" stroke="#d4af37" stroke-width="2"/>
+              <circle cx="24" cy="25" r="3" fill="#fff"/>
+              <circle cx="36" cy="39" r="2.5" fill="#fff"/>
+              <circle cx="96" cy="25" r="3" fill="#fff"/>
+              <circle cx="84" cy="39" r="2.5" fill="#fff"/>
+              <rect x="51" y="23" width="18" height="20" rx="7" fill="#ff3b82" stroke="#d4af37" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <span class="section-kicker">Mesa de Regalos</span>
+          <h3 class="section-title">Un detalle especial</h3>
+
+          <button id="gift-sparkle-btn" class="gift-icon-envelope" type="button" aria-label="Enviar destellos de cariño" title="Toca para enviar destellos">
+            <svg viewBox="0 0 64 64" fill="none">
+              <rect x="8" y="16" width="48" height="34" rx="6" fill="#fff0f6" stroke="#d4af37" stroke-width="2.5"/>
+              <path d="M8 20l24 18L56 20" stroke="#d4af37" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M32 39.5l-1.1-1C27 35 24.5 32.8 24.5 30c0-2.2 1.7-3.9 3.9-3.9 1.2 0 2.4.6 3.1 1.5h1c.7-.9 1.9-1.5 3.1-1.5 2.2 0 3.9 1.7 3.9 3.9 0 2.8-2.5 5-6.4 8.5l-1.1 1z" fill="#ff4d8d"/>
+            </svg>
+          </button>
+
+          <blockquote class="gifts-quote">
+            “Tu presencia es nuestro mejor regalo,<br>
+            pero si deseas tener un detalle,<br>
+            también recibimos lluvia de sobres y regalitos.”
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CONFIRMACIÓN (WHATSAPP) & COMPARTIR -->
+    <section id="rsvp-section" class="section rsvp-section polka-soft">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-kicker">Acompáñanos</span>
+          <h3 class="section-title">Confirma tu asistencia</h3>
+          <p class="section-subtitle">Será maravilloso contar contigo en este día inolvidable para Andrea.</p>
+        </div>
+
+        <form id="rsvp-form" class="rsvp-card reveal-item" novalidate>
+          <div class="form-group">
+            <label for="guest-name">Nombre completo o familia</label>
+            <input type="text" id="guest-name" name="guestName" placeholder="Ej. Familia Pérez López" required maxlength="80">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guest-count">Número de personas</label>
+              <select id="guest-count" name="guestCount">
+                <option value="1 persona">1 persona</option>
+                <option value="2 personas" selected>2 personas</option>
+                <option value="3 personas">3 personas</option>
+                <option value="4 personas">4 personas</option>
+                <option value="5 o más personas">5 o más personas</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="guest-status">Asistencia</label>
+              <select id="guest-status" name="guestStatus">
+                <option value="Sí, ¡ahí estaremos!">Sí, ¡ahí estaremos!</option>
+                <option value="Con pena, no podremos asistir">No podremos asistir</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="guest-message">Mensaje para Andrea (opcional)</label>
+            <input type="text" id="guest-message" name="guestMessage" placeholder="¡Feliz cumpleaños pequeña Andrea!" maxlength="140">
+          </div>
+
+          <button type="submit" class="btn-whatsapp">
+            <span class="btn-shine"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.79 14.12c-.24.68-1.41 1.3-1.95 1.38-.51.08-1.15.11-1.85-.11-.43-.14-.98-.32-1.69-.63-2.97-1.28-4.91-4.29-5.06-4.49-.15-.2-1.21-1.61-1.21-3.07s.76-2.18 1.03-2.48c.27-.3.59-.37.79-.37.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.83 2.02.9 2.17.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.3.31-.13.61.17.3.77 1.27 1.65 2.06 1.13 1.01 2.09 1.32 2.39 1.47.3.15.47.12.64-.08.17-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.81 2.02.96.3.15.49.22.56.35.07.12.07.72-.17 1.4z"/></svg>
+            <span>Confirmar vía WhatsApp</span>
+          </button>
+        </form>
+
+        <div class="share-banner reveal-item">
+          <p>¿Quieres compartir esta invitación con alguien más?</p>
+          <button id="share-main-btn" class="btn-outline-gold" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.79 14.12c-.24.68-1.41 1.3-1.95 1.38-.51.08-1.15.11-1.85-.11-.43-.14-.98-.32-1.69-.63-2.97-1.28-4.91-4.29-5.06-4.49-.15-.2-1.21-1.61-1.21-3.07s.76-2.18 1.03-2.48c.27-.3.59-.37.79-.37.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.83 2.02.9 2.17.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.3.31-.13.61.17.3.77 1.27 1.65 2.06 1.13 1.01 2.09 1.32 2.39 1.47.3.15.47.12.64-.08.17-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.81 2.02.96.3.15.49.22.56.35.07.12.07.72-.17 1.4z"/></svg>
+            <span>Compartir por WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-ears" aria-hidden="true">
+          <span></span><span></span>
+        </div>
+        <p class="footer-title">Andrea • ¡Mis 2 Añitos!</p>
+        <p class="footer-sub">Te esperamos con todo el cariño • Sábado 21 de noviembre</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Notificación Toast para acciones (Copiar enlace, Calendario, etc.) -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts modulares (compatibles con hosting estático y apertura local) -->
+  <script src="js/particles.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
