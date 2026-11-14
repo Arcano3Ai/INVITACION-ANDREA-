@@ -7,7 +7,7 @@
   function getEventTargetYear() {
     const now = new Date();
     const year = now.getFullYear();
-    const candidate = new Date(year, 10, 21, 18, 0, 0); // 21 de noviembre 6:00 PM
+    const candidate = new Date(year, 10, 22, 18, 0, 0); // 22 de noviembre 6:00 PM
     return candidate.getTime() < now.getTime() - 86400000 ? year + 1 : year;
   }
 
@@ -35,8 +35,8 @@
 
   function getEventDates() {
     const year = getEventTargetYear();
-    const start = new Date(year, 10, 21, 18, 0, 0); // 6:00 PM
-    const end = new Date(year, 10, 21, 22, 30, 0);  // 10:30 PM
+    const start = new Date(year, 10, 22, 18, 0, 0); // 6:00 PM
+    const end = new Date(year, 10, 22, 22, 30, 0);  // 10:30 PM
     return { start, end };
   }
 

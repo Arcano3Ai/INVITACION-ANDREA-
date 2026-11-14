@@ -9,7 +9,7 @@
     whatsappPhone: '5218110626302',
     shareTitle: '🎀 Andrea — ¡Mis 2 Añitos!',
     shareText:
-      'Tienes una invitación especial para celebrar los 2 añitos de Andrea. Sábado 21 de noviembre • Recepción 6:00 PM.'
+      'Tienes una invitación especial para celebrar los 2 añitos de Andrea. Domingo 22 de noviembre • Recepción 6:00 PM.'
   };
 
   let toastTimer = null;
